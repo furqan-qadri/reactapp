@@ -25,6 +25,11 @@ function App() {
       </div>
       <Hello person={person} />
       <Fruits fruits={fruits}/>
+
+      <button className="p-4 bg-green-400 rounded-full "onClick={() => {window.location.href = "/profiles"}}>Go to Profile Page</button>
+
+
+      
     </div>
   );
 }
