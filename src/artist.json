@@ -1,0 +1,61 @@
+{
+    "laptops": [
+      {
+        "model": "Dell XPS 13",
+        "brand": "Dell",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "price": "$1399"
+      },
+      {
+        "model": "MacBook Pro 13",
+        "brand": "Apple",
+        "processor": "Apple M1",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "price": "$1299"
+      },
+      {
+        "model": "HP Spectre x360",
+        "brand": "HP",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "price": "$1499"
+      },
+      {
+        "model": "Lenovo ThinkPad X1 Carbon",
+        "brand": "Lenovo",
+        "processor": "Intel Core i5",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "price": "$1299"
+      },
+      {
+        "model": "Asus ZenBook 14",
+        "brand": "Asus",
+        "processor": "AMD Ryzen 7",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "price": "$1199"
+      },
+      {
+        "model": "Microsoft Surface Laptop 4",
+        "brand": "Microsoft",
+        "processor": "AMD Ryzen 5",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "price": "$999"
+      },
+      {
+        "model": "Acer Swift 3",
+        "brand": "Acer",
+        "processor": "Intel Core i5",
+        "ram": "8GB",
+        "storage": "512GB SSD",
+        "price": "$899"
+      }
+    ]
+  }
+  
