@@ -1,8 +1,12 @@
-import React from "react";
+import {React, ReactDOM, useState} from "react";
 import Hello from "./Hello";
 import Fruits from "./components/Fruits";
 import ProfilePage from "./pages/ProfilePage";
 import Counter from "./components/Counter";
+import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+import FroalaEditorComponent from 'react-froala-wysiwyg';
+
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Dogapi from "./Dogapi";
@@ -11,6 +15,7 @@ import Testing from "./Testing"
 // Install Swiper modules
 import { useRef, useEffect } from 'react';
 import 'swiper/css/bundle';
+import EditorContainer from "./Editorcontainer";
 
 
 
@@ -31,16 +36,31 @@ function App() {
     {name:"pear", emoji:"🍐", price:14 , soldOut:true},
     {name:"strawberry", emoji:"🍓", price:17, soldOut:false},
   ]
+  
   const isFriutLover=true;
 
+  
+  const config={
+    placeholder: 'Edit Your Contedfdfsnt Here!',
+    charCounterCount: true,
+  }
 
+  const [editorContent, setEditorContent] = useState("what is up");
 
   return (
-    <div>
+
+    <div id="">
+      <EditorContainer tag='textarea'
+          config={config}
+          model={{ text: "what is up" }}
+
+          // model={model}
+          // onModelChange={handleModelChange}
+          /> 
       <div className=" bg-slate-200 w-100 text-xl flex justify-center items-center">
-        This is the homepage
+        Furqan Qadri's local
       </div>
-      <Hello person={person} />
+      {/* <Hello person={person} /> */}
       {/* {isFriutLover && <Fruits fruits={fruits} />} */}
 
       {/* {isFriutLover ? <Fruits fruits={fruits} /> : <div>Not a fruit lover</div>} */}
@@ -59,7 +79,7 @@ function App() {
     </swiper-container> */}
 
 
-<Swiper
+{/* <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
       spaceBetween={50}
@@ -76,13 +96,17 @@ function App() {
       <SwiperSlide>Slide 1 <img src="/vite.svg" alt="" className="h-[400px] w-full" /></SwiperSlide>
       <SwiperSlide>Slide 1 <img src="/vite.svg" alt="" className="h-[400px] w-full" /></SwiperSlide>
       ...
-    </Swiper>
+    </Swiper> */}
 
 
     {/* <Dogapi/> */}
-    <Testing/>
+    {/* <Testing/> */}
     </div>
   );
 }
 
 export default App;
+
+
+
+               
